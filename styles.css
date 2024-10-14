@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    background-image: url('fondo.jpg'); /* Cambia esto a la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    color: #f4f4f4; /* Texto blanco/gris claro */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro para contrastar con el fondo azul */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in; /* Animación al aparecer */
+}
+
+header h1 {
+    color: #ffffff; /* Color dorado para que resalte */
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    color: #f4f4f4; /* Texto blanco */
+}
+
+.profile-pic {
+    width: 150px; /* Aumentar tamaño de la imagen a 150px */
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #fff; /* Borde blanco alrededor de la imagen para resaltarla */
+    animation: bounce 2s infinite; /* Animación de rebote */
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #FFA500; /* Botón color naranja */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    animation: slideIn 0.5s ease-in; /* Animación al aparecer */
+}
+
+.btn:hover {
+    background: #FF8C00; /* Un tono más oscuro de naranja para el hover */
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semitransparente */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #f4f4f4; /* Texto blanco/gris claro */
+    animation: fadeInUp 1s ease; /* Animación de desvanecimiento hacia arriba */
+}
+
+h2 {
+    color: #FFD700; /* Títulos en color dorado para hacerlos destacar */
+}
+
+.job, .education {
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #f4f4f4;
+}
+
+footer a {
+    color: #FFD700; /* Links dorados */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
